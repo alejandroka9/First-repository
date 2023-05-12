@@ -83,17 +83,13 @@ function validarFormulario(){
 
 }
 
-//editar varios small desde la clase textito
-var elementos = document.querySelectorAll('.textito');
-
-elementos.forEach(function(elemento) {
-  // Realizar cambios en cada elemento
-  elemento.style.color = 'yellow';
-  elemento.style.fontSize = '16px';
-
-});
 
 
-//nuevos cambios
+//añadir clase con js a editar
+var letritas = document.getElementsByTagName("small");
 
+for (var i = 0; i < letritas.length; i++) {
+  letritas[i].classList.add("textito");
+}
 
+//añadir clase con js a agregar

@@ -1,3 +1,4 @@
+//reloj
 function updateClock() {
     var now = new Date();
     var hours = now.getHours();
@@ -115,7 +116,7 @@ function updateClock() {
   
   
   });
-  
+  //modo claro, modo oscuro
   $(document).ready(function() {
     $("#modeToggle").click(function() {
       $("body").toggleClass("dark-mode");

@@ -117,13 +117,17 @@ class Carrito {
         productosLS = this.obtenerProductosLocalStorage();
         productosLS.forEach(function (producto){
             //Construir plantilla
+            let test = "$12.9000";
+            console.log(test.replace("$","").replace(".",""));
+
+            console.log("1111111111111111111",producto.precio.toLocaleString("es-CL", {style: "currency", currency:"CLP"}));
             const row = document.createElement('tr');
             row.innerHTML = `
                 <td>
                     <img src="${producto.imagen}" width=100>
                 </td>
                 <td>${producto.titulo}</td>
-                <td>${producto.precio}</td>
+                <td>${producto.precio.toLocaleString("es-CL", {style: "currency", currency:"CLP"})}</td>
                 <td>
                     <a href="#" class="borrar-producto fas fa-times-circle" data-id="${producto.id}"></a>
                 </td>
@@ -132,6 +136,8 @@ class Carrito {
         });
     }
 
+
+    
     //Mostrar los productos guardados en el LS en compra.html
     leerLocalStorageCompra(){
         let productosLS;
@@ -143,7 +149,7 @@ class Carrito {
                     <img src="${producto.imagen}" width=100>
                 </td>
                 <td>${producto.titulo}</td>
-                <td>${producto.precio}</td>
+                <td>${producto.precio.toLocaleString("es-CL", {style: "currency", currency:"CLP"})}</td>
                 <td>
                     <input type="number" class="form-control cantidad" min="1" value=${producto.cantidad}>
                 </td>

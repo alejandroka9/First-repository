@@ -1,52 +1,52 @@
+//validacion formulario de agregar producto con jquerry
+$(function(){
+    $("#formulario").validate({
+        rules:{
+            txtSkuu:{
+                required:true,
+                minlength:3,
+                maxlength:17
+                
+            },
+            txtNombree:{
+                required:true,
+                minlength:12
+            },
+            txtValorr:{
+                required:true,
+                minlength:6
+            },
+            txtDescripcionn:{
+                required:true,
+                minlength:50
+            }
+        },
+        messages:{
+            txtSkuu:{
+                required: "El Sku es un campo obligatorio.",
+                minlength: "El minimo de caracteres es 3.",
+                maxlength: "El maximo de caracteres es 17."
+            },
+            txtNombree:{
+                required:"El Nombre es un campo obligatorio.",
+                minlength: "El minimo de caracteres es 10."
+            },
+            txtValorr:{
+                required: "El Valor es un campo obligatorio.",
+                minlength: "El minimo de caracteres es 6."
+            },
+            txtDescripcionn:{
+                
+                required: "La Descripcion es un campo obligatorio.",
+                minlength: "El minimo de caracteres es 50."
+            }
+        }
+    })
+})
 
-//validacion formulario de carrito con js
-document.getElementById("valSku").style.display = "none";
-document.getElementById("valNombre").style.display = "none";
-document.getElementById("valValor").style.display = "none";
-document.getElementById("valDescripcion").style.display = "none";
+//añadir clase con js a agregar 
+var letritas = document.getElementsByTagName("small");
 
-
-function validarFormularioo(){
-    let sku = document.getElementById("txtSkuu").value;
-    let nombre = document.getElementById("txtNombree").value;
-    let valor = document.getElementById("txtValorr").value;
-    let descripcion = document.getElementById("txtDescripcionn").value;
-
-    if (sku.length == 0) {
-        document.getElementById("valSku").style.display = "inline";
-        document.getElementById("txtSkuu").classList.add("is-invalid");
-    }else{
-        document.getElementById("txtSkuu").classList.remove("is-invalid");
-        document.getElementById("txtSkuu").classList.add("is-valid");
-        document.getElementById("valSku").style.display = "none";
-    }
-
-
-    if (nombre.length == 0) {
-        document.getElementById("valNombre").style.display = "inline";
-        document.getElementById("txtNombree").classList.add("is-invalid");
-    }else{
-        document.getElementById("txtNombree").classList.remove("is-invalid");
-        document.getElementById("txtNombree").classList.add("is-valid");
-        document.getElementById("valNombre").style.display = "none";
-    }
-    
-    if (valor.length == 0) {
-        document.getElementById("valValor").style.display = "inline";
-        document.getElementById("txtValorr").classList.add("is-invalid");
-    }else{
-        document.getElementById("txtValorr").classList.remove("is-invalid");
-        document.getElementById("txtValorr").classList.add("is-valid");
-        document.getElementById("valValor").style.display = "none";
-    }
-    if (descripcion.length == 0) {
-        document.getElementById("valDescripcion").style.display = "inline";
-        document.getElementById("txtDescripcionn").classList.add("is-invalid");
-    }else{
-        document.getElementById("txtDescripcionn").classList.remove("is-invalid");
-        document.getElementById("txtDescripcionn").classList.add("is-valid");
-        document.getElementById("valDescripcion").style.display = "none";
-    }
-
-
+for (var i = 0; i < letritas.length; i++) {
+  letritas[i].classList.add("textito");
 }
