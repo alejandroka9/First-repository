@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Styleee.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>editElimPro</title>
+</head>
+<div>
+<button type="button" s><a class="boton" href="index.html"> <button class="btn btn-primary" type="submit">Atras</button> </a></button>
+</div>
+
+<body style="background-color: rgb(191, 191, 191);  font-family: mifuente;">
+
+    <div class="container mb-5">
+        <h1 class="Carrito">Editar Producto</h1>
+        <form action="#">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="form-floating mb-3">
+                        <input onblur="validarFormularioo()" type="text" class="form-control" id="txtSkuu" placeholder="SKU" >
+                        <label for="floatingInput">SKU</label>
+                        <small  id="valSku">ingrese Sku del producto </small>                    
+
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="form-floating mb-3">
+                        <input onblur="validarFormularioo()" type="text" class="form-control" id="txtNombree" placeholder="Nombre" >
+                        <label for="floatingInput">Nombre</label>
+                        <small id="valNombre">ingrese nombre del producto </small>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="form-floating mb-3">
+                        <input  onblur="validarFormularioo()" type="number" class="form-control" id="txtValorr" placeholder="Valor" >
+                        <label for="floatingInput">Valor</label>
+                        <small  id="valValor">ingrese precio del producto </small>
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <div class="form-floating mb-3">
+                        <input onblur="validarFormularioo()" type="text" class="form-control" id="txtDescripcionn" placeholder="Descripción" >
+                        <label for="floatingInput">Descripción</label>
+                        <small id="valDescripcion">ingrese una descripcion apropiada al producto</small>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-outline-success">Guardar</button>
+        </form>
+    </div>
+    
+    
+    
+    
+    
+    <div class="container mt-5">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col" style="background-color: green; width: 20%; color:white ;">SKU</th>
+                    <th scope="col" style="background-color: green; width: 20%; color:white ;">Nombre</th>
+                    <th scope="col" style="background-color: green; width: 20%; color:white ;">Descripción</th>
+                    <th scope="col" style="background-color: green; width: 20%; color:white ;">Valor</th>
+                    <th scope="col" style="background-color: green; width: 20%; color:white ;">Editar - Eliminar</th>
+                </tr>
+            </thead>
+            <tbody class="">
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Tulipanes </td>
+                    <td> Planta herbácea </td>
+                    <td>$100</td>
+                    <td>
+                        <a href="editarPlanta.html">
+                            <button type="button" class="btn btn-primary">Editar</button>
+                        </a>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Eliminar
+                        </button>
+    
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Eliminar producto</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Desea eliminar el producto?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-danger">Eliminar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+    
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Rosas</td>
+                    <td>Sus flores son grandes</td>
+                    <td>$500</td>
+                    <td>
+                        <a href="editarPlanta.html">
+                            <button type="button" class="btn btn-primary">Editar</button>
+                        </a>
+
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Eliminar
+                        </button>
+    
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Eliminar producto</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Desea eliminar el producto?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-danger">Eliminar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+    
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Orquídeas</td>
+                    <td>Las orquídeas u orquidáceas</td>
+                    <td>$700</td>
+                    <td>
+                        <a href="editarPlanta.html">
+                            <button type="button" class="btn btn-primary">Editar</button>
+                        </a>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Eliminar
+                        </button>
+    
+                        <!-- -------------------MODAL---------------- -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Eliminar producto</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Desea eliminar el producto?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-danger">Eliminar</button>
+                                        <div class="modal fade" id="exampleModal" tabindex="-1"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Eliminar
+                                                            producto</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        Desea eliminar el producto?
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">Cerrar</button>
+                                                        <button type="button" class="btn btn-danger">Eliminar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                    </td>
+    
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>petunia</td>
+                    <td>Su color es penetrante</td>
+                    <td>$2000</td>
+                    <td>
+                        <a href="editarPlanta.html">
+                            <button type="button" class="btn btn-primary">Editar</button>
+                        </a>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Eliminar
+                        </button>
+    
+    
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Eliminar producto</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Desea eliminar el producto?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-danger">Eliminar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+    
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>brezo</td>
+                    <td>Dispuestas a embellecer tu patio</td>
+                    <td>$5000</td>
+                    <td>
+                        <a href="editarPlanta.html">
+                            <button type="button" class="btn btn-primary">Editar</button>
+                        </a>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Eliminar
+                        </button>
+    
+    
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Eliminar producto</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Desea eliminar el producto?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-danger">Eliminar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+    
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>Rosas</td>
+                    <td>Sus flores son grandes</td>
+                    <td>$500</td>
+                    <td>
+                        <a href="editarPlanta.html">
+                            <button type="button" class="btn btn-primary">Editar</button>
+                        </a>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Eliminar
+                        </button>
+    
+    
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Eliminar producto</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Desea eliminar el producto?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-danger">Eliminar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+    
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td>Fertilizantes</td>
+                    <td>Espanta los mosquitos e insectos de tus plantas</td>
+                    <td>$20000</td>
+                    <td>
+                        <a href="editarPlanta.html">
+                            <button type="button" class="btn btn-primary">Editar</button>
+                        </a>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Eliminar
+                        </button>
+    
+    
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Eliminar producto</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Desea eliminar el producto?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-danger">Eliminar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+    
+                </tr>
+                <tr>
+                    <th scope="row">8</th>
+                    <td>Insumos</td>
+                    <td>Alimenta y aumenta el crecimiento de tus plantas</td>
+                    <td>$10000</td>
+                    <td>
+                        <a href="editarPlanta.html">
+                            <button type="button" class="btn btn-primary">Editar</button>
+                        </a>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Eliminar
+                        </button>
+    
+    
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Eliminar producto</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Desea eliminar el producto?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-danger">Eliminar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+    
+                </tr>
+                <tr>
+                    <th scope="row">9</th>
+                    <td>PlantMix Fósforo</td>
+                    <td>Para el cuidado de tus plantas</td>
+                    <td>$15000</td>
+                    <td>
+                        <a href="editarPlanta.html">
+                            <button type="button" class="btn btn-primary">Editar</button>
+                        </a>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Eliminar
+                        </button>
+    
+    
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Eliminar producto</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Desea eliminar el producto?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-danger">Eliminar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+    
+                </tr>
+                <tr>
+                    <th scope="row">10</th>
+                    <td>Jabon Potásico Crema Para Desinfección De Plantas 250 Grs </td>
+                    <td>Disponible</td>
+                    <td>$25000</td>
+                    <td>
+                        <a href="editarPlanta.html">
+                            <button type="button" class="btn btn-primary">Editar</button>
+                        </a>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Eliminar
+                        </button>
+    
+    
+    </div>
+    </div>
+    </div>
+    </div>
+    </td>
+    
+    </tr>
+    </tbody>
+    </table>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+    integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+    crossorigin="anonymous"></script>
+    <script src="js/funciones3.js"></script>
+
+    
+</body>
+</html>

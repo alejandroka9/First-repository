@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/stylee.css">
+    <title>Editar</title>
+</head>
+
+<body>
+
+    <div class="container mb-5">
+        <h1>Editar productos</h1>
+        <form action="#">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="form-floating mb-6">
+                        <input onblur="validarFormulario()" type="text" class="form-control" id="txtSku" placeholder="SKU" >
+                        <label for="floatingInput">SKU</label>
+                        <small class="textito" id="valsku">Ingrese sku del producto</small>
+                    </div>
+                </div>
+                <p></p>
+                <div class="col-md-6">
+                    <div class="form-floating mb-3">
+                        <input onblur="validarFormulario()" type="text" class="form-control" id="txtNombre" placeholder="Nombre" >
+                        <label for="floatingInput">Nombre</label>
+                        <small class="textito" id="valnombre">ingrese nombre del producto</small>
+                    </div>
+                </div>
+                <p></p>
+                <div class="col-md-6">
+                    <div class="form-floating mb-3">
+                        <input onblur="validarFormulario()" type="number" class="form-control" id="txtValor" placeholder="Valor" >
+                        <label for="floatingInput">Valor</label>
+                        <small class="textito" id="valvalor">ingrese precio </small>
+                    </div>
+                </div>
+                <p></p>
+                <div class="col-md-6">
+                    <div class="form-floating mb-3">
+                        <input onblur="validarFormulario()" type="date" class="form-control" id="txtFecha" placeholder="Descripción" >
+                        <label for="floatingInput">Fecha de edicion</label>
+                        <small class="textito" id="valfecha">ingrese fecha de edicion</small>
+                    </div>
+                </div>
+                <p></p>
+                <div class="col-md-6">
+                    <div class="form-floating mb-3">
+                        <input onblur="validarFormulario()" type="text" class="form-control" id="txtDescripcion" placeholder="Descripción" >
+                        <label for="floatingInput">Descripción</label>
+                        <small class="textito" id="valdescripcion">ingrese descripcion</small>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#">
+                <input type="reset" class="resetear" value="Borrar">
+            </a>
+                <button type="submit" class="guardar">Guardar</button>
+            
+        </form>
+        <a href="carrito.html">
+            <button type="submit" class="atras"> atras</button>
+        </a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+        integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+        crossorigin="anonymous"></script>
+    <script src="js/funciones2.js"></script>
+</body>
+
+</html>

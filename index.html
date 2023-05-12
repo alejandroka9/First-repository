@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- icons -->
+  
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/Styleee.css">
+  <title>Inicio</title>
+</head>
+<body>
+  <!-- header -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div style=" background-color: rgb(0, 0, 0);" class="container-fluid">
+      <a class="logo" href="#"><img src="img/logo_largo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- reloj -->
+
+      <svg style="color: rgb(129, 255, 129); margin-left: 6%; " xmlns="http://www.w3.org/2000/svg" width="40"
+        height="40 " fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+        <path
+          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+      </svg>
+
+
+
+      <div style="margin: 1%; background-color: azure; border-radius: 7%;" id="clock"></div>
+
+
+
+      <!-- search -->
+      <form style="margin: 2%;" class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+
+      <!-- Iniciar Sesion y Registrarse -->
+      <div class="enlaces">
+        <a href="login.html" class="nav-inicio"> <button type="button" class="btn btn-info">Iniciar Sesion</button> </a>
+
+        <a href="iindex.html" class="nav-registrarse"> <button type="button" class="btn btn-danger">Registrarse</button>
+        </a>
+      </div>
+
+
+
+      <!-- menu -->
+      <div style="margin-right: 5%;">
+        <div class="btn-group">
+          <button type="button" class="btn btn-outline-success">Menu</button>
+          <button style="background-color: white;" type="button"
+            class="btn btn-outline-success dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+            aria-expanded="false">
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="editElimPro.html"> <button type="button"
+                  class="btn btn-outline-warning">Productos</button> </a></li>
+            <li><a class="dropdown-item" href="editarPlanta.html"> <button type="button"
+                  class="btn btn-outline-success">Editar</button>
+              </a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#"> <button type="button" id="modeToggle"
+                  class="btn btn-outline-secondary">Modo Oscuro</button> </a></li>
+          </ul>
+        </div>
+      </div>
+
+
+
+    </div>
+  </nav>
+
+  <!-- carousel -->
+
+  <div class="container-carrusel">
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/productos_plantas.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/señora_plantas.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/productos_plantas_2.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button style="background-color: hsl(154, 46%, 50%); width: 9%;" class="carousel-control-prev" type="button"
+        data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button style="background-color: hsl(154, 46%, 50%); width: 9%;" class="carousel-control-next" type="button"
+        data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <br>
+
+
+
+
+  <!--informacion entre medio  -->
+  <div class="container text-center">
+    <div class="row align-items-start">
+      <div class="col ">
+        <h3>¿Quienes somos?</h3>
+        <p>Somos una empresa dedicada a facilitar la compra y venta de productos, entre clientes de confianza y sin duda
+          con un final feliz para todos.</p>
+      </div>
+      <div class="col">
+        <h3>¿Que ofrecemos?</h3>
+        <p>Ofrecemos una alta gama de productos de calidad, para tus plantas y el cuidado de ellas.</p>
+      </div>
+      <div class="col">
+        <h3>Nuestros beneficios</h3>
+        <p>Facilitamos la comunicacion entre personas interesadas en productos para sus plantas y los llevamos a un
+          vendedor confiable y cumplido.</p>
+      </div>
+    </div>
+  </div>
+  <br>
+
+
+
+  <!-- productos -->
+
+  <main>
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto text-center">
+      <h1 class="display-4 mt-4">Lista de Productos</h1>
+      <p class="lead">Selecciona uno de nuestros productos</p>
+    </div>
+  
+    <div style=" display: flex; justify-content: center;" class="container">
+      <div class="row align-items-stretch justify-content-between">
+        <nav class="navbar ">
+  
+          <div class="nav-link dropdown-toggle img-fluid" height="70px" width="70px" href="#" id="dropdown01"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <!-- icono carrito -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-cart"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+            </svg>
+          </div>
+  
+          <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+            <table id="lista-carrito" class="table">
+              <thead>
+                <tr>
+                  <th>Imagen</th>
+                  <th>Nombre</th>
+                  <th>Precio</th>
+                  <th><a href="#" class="borrar-producto fas fa-times-circle" data-id="1"></a></th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+  
+            <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+            <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar
+              Compra</a>
+          </div>
+          </li>
+          </ul>
+      </div>
+      </nav>
+    </div>
+    </div>
+
+
+
+
+
+    <div style="margin-left: 16%;" class="container" id="lista-productos">
+  
+      <div class="card-deck mb-3 text-center">
+  
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-bold">Aceite</h4>
+          </div>
+          <div class="card-body">
+            <img src="img/Aceite.webp" class="card-img-top">
+            <h1 class="card-title pricing-card-title precio">$ <span class="">5000</span></h1>
+  
+            <ul class="list-unstyled mt-3 mb-4">
+              <li></li>
+              <li>Insecticida</li>
+              <li>Aceite Springhill Anasac</li>
+              <li>(100cc)</li>
+            </ul>
+            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+          </div>
+        </div>
+  
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-bold">Algas</h4>
+          </div>
+          <div class="card-body">
+            <img src="img/AlgaMax.jfif" class="card-img-top">
+            <h1 class="card-title pricing-card-title precio">$ <span class="">3000</span></h1>
+  
+            <ul class="list-unstyled mt-3 mb-4">
+              <li></li>
+              <li>Best Garden</li>
+              <li>Algas nutricionales para tus plantas</li>
+              <li>(Liquido)</li>
+            </ul>
+            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="2">Comprar</a>
+          </div>
+        </div>
+  
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-bold">Fertilizante</h4>
+          </div>
+          <div class="card-body">
+            <img src="img/bio_f.jpg" class="card-img-top">
+            <h1 class="card-title pricing-card-title precio">$ <span class="">4000</span></h1>
+  
+            <ul class="list-unstyled mt-3 mb-4">  
+              <li></li>
+              <li>Bio Fertilizante</li>
+              <li>para Plantas</li>
+              <li>(Interior)</li>
+            </ul>
+            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="3">Comprar</a>
+          </div>
+        </div>
+  
+      </div>
+  
+      <div class="card-deck mb-3 text-center">
+  
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-bold">Alimento</h4>
+          </div>
+          <div class="card-body">
+            <img src="img/CreceMas.webp" class="card-img-top">
+            <h1 class="card-title pricing-card-title precio">$ <span class="">5900</span></h1>
+  
+            <ul class="list-unstyled mt-3 mb-4">
+              <li></li>
+              <li>Crece Mas</li>
+              <li>Producen su propio alimento gracias a la energía de la luz</li>
+              <li>(Liquido)</li>
+            </ul>
+            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="4">Comprar</a>
+          </div>
+        </div>
+  
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-bold">Fertilizante</h4>
+          </div>
+          <div class="card-body">
+            <img src="img/fertilizate_arboles.jpg" class="card-img-top">
+            <h1 class="card-title pricing-card-title precio">$ <span class="">5769</span></h1>
+  
+            <ul class="list-unstyled mt-3 mb-4">
+              <li></li> 
+              <li>Fertilizante</li>
+              <li>Para Árboles</li>
+              <li>(Arbustos)</li>
+            </ul>
+            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="5">Comprar</a>
+          </div>
+        </div>
+  
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-bold">Fertilizante</h4>
+          </div>
+          <div class="card-body">
+            <img src="img/fertplanttlitro.jpg" class="card-img-top">
+            <h1 class="card-title pricing-card-title precio">$ <span class="">2599</span></h1>
+  
+            <ul class="list-unstyled mt-3 mb-4">
+              <li></li>
+              <li>Anasac</li>
+              <li>Fert Plant</li>
+              <li>(Para uso especial)</li>
+            </ul>
+            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="6">Comprar</a>
+          </div>
+        </div>
+  
+      </div>
+  
+      <div class="card-deck mb-3 text-center">
+  
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-bold">Fertilizante</h4>
+          </div>
+          <div class="card-body">
+            <img src="img/jardinFertilizante.jpg" class="card-img-top">
+            <h1 class="card-title pricing-card-title precio">$ <span class="">4299</span></h1>
+  
+            <ul class="list-unstyled mt-3 mb-4">
+              <li></li>
+              <li>"El jardin"</li>
+              <li>Cuida tus plantas con nuestro fertilizante a prueba de insectos</li>
+              <li>(Liquido)</li>
+            </ul>
+            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="7">Comprar</a>
+          </div>
+        </div>
+  
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-bold">Sustrato</h4>
+          </div>
+          <div class="card-body">
+            <img src="img/sustrato_grande.webp" class="card-img-top">
+            <h1 class="card-title pricing-card-title precio">$ <span class="">3000</span></h1>
+  
+            <ul class="list-unstyled mt-3 mb-4">
+              <li></li>
+              <li>Sustrato</li>
+              <li>Para Plantas</li>
+              <li>(Interior)</li>
+            </ul>
+            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="8">Comprar</a>
+          </div>
+        </div>
+  
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-bold">Hierro</h4>
+          </div>
+          <div class="card-body">
+            <img src="img/Hierro.jpg" class="card-img-top">
+            <h1 class="card-title pricing-card-title precio">$ <span class="">5397</span></h1>
+  
+            <ul class="list-unstyled mt-3 mb-4">
+              <li></li>
+              <li>PlantMix</li>
+              <li>Hierro para plantas de acuarios</li>
+              <li>(250ml)</li>
+            </ul>
+            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="9">Comprar</a>
+          </div>
+        </div>
+  
+      </div>
+  
+  
+    </div>
+  </main>
+
+  <!-- --------------------------Contenedor footer------------------------------------ -->
+  <br>
+  <footer>
+    <div class="container-fluid">
+      <div class="row p-5 bg-dark text-white">
+        <div class=" col-xs-12 col-md-6 col-lg-3">
+          <p class="h3"><img src="img/logo.png" style="width: 85%;" alt=""></p>
+        </div>
+        <div class=" col-xs-12 col-md-6 col-lg-3">
+          <p class="h5 mb-3">Contactos</p>
+          <div class="mb-2">
+            <a class="text-secondary text-decoration-none" href="#">Instagram</a>
+          </div>
+          <div class="mb-2">
+            <a class="text-secondary text-decoration-none" href="#">Facebook</a>
+          </div>
+          <div class="mb-2">
+            <a class="text-secondary text-decoration-none" href="#">Whatsapp</a>
+          </div>
+        </div>
+        <div class=" col-xs-12 col-md-6 col-lg-3">
+          <p class="h5 mb-3">Links</p>
+          <div class="mb-2">
+            <a class="text-secondary text-decoration-none" href="#">Terminos y Condiciones</a>
+          </div>
+          <div class="mb-2">
+            <a class="text-secondary text-decoration-none" href="#">Politica de Privacidad</a>
+          </div>
+          <div class="container">
+            <div class="icon">
+              <img id="iconos" src="" alt="">
+            </div>
+            <div class="temp">
+              -°
+            </div>
+            <div class="summary">
+              -----
+            </div>
+            <div class="location">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/sweetalert2.min.js"></script>
+  <script src="js/carrito.js"></script>
+  <script src="js/pedido.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+    integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+    crossorigin="anonymous"></script>
+  <script src="js/funciones.js"></script>
+
+
+
+</body>
+
+</html>
